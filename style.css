@@ -55,6 +55,7 @@ header h1 {
 
 th {
     font-size: 1.5em;
+    text-align: left;
 }
 
 header a {
@@ -73,10 +74,6 @@ header a {
 header a:hover {
   background:  #e81c4f;
   color: white;
-}
-
-div.personal-data th {
-    text-align: left;
 }
 
 div.cv-image img{
@@ -127,10 +124,6 @@ div.languages {
     padding-bottom: 5em;
 }
 
-div.languages th{
-    text-align: left;
-}
-
 div.languages li {
     margin:0 auto;
     list-style: none;
@@ -146,10 +139,6 @@ div.skill-level-text {
     padding-bottom: 2em;
 }
 
-div.technical-skills th {
-    text-align: left;
-}
-
 div.technical-skills li {
     display: inline;
     width: 10px;
@@ -161,10 +150,6 @@ div.technical-skills li {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     padding: .5em .5em .5em .5em;
-}
-
-div.experience th {
-    text-align: left;
 }
 
 .card {
@@ -184,16 +169,18 @@ div.experience th {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-div.company-name {
+div.organization {
     font-family: arial, sans-serif;
+    padding-bottom: 1em;
     font-size: 1.3em;
 }
 
 .period,
-.position {
+.specialty {
     font-size: 1.15em;
 }
 
 .description {
     padding: 1em;
+    text-align: justify;
 }
