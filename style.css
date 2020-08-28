@@ -162,3 +162,38 @@ div.technical-skills li {
     border-bottom-right-radius: 40px;
     padding: .5em .5em .5em .5em;
 }
+
+div.experience th {
+    text-align: left;
+}
+
+.card {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+div.company-name {
+    font-family: arial, sans-serif;
+    font-size: 1.3em;
+}
+
+.period,
+.position {
+    font-size: 1.15em;
+}
+
+.description {
+    padding: 1em;
+}
