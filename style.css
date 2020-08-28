@@ -184,3 +184,8 @@ div.organization {
     padding: 1em;
     text-align: justify;
 }
+
+div.hobbies li {
+    list-style: none;
+    display: inline-table;
+}
