@@ -77,11 +77,12 @@ header a:hover {
 }
 
 div.cv-image img{
-    border: 3px solid #69c;
+    border: 0.5px solid #d8dee9;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
     border-radius: 50%;
-    min-width:40%;
-    max-width:60%;
-    height: auto;
 }
 
 .circle {
