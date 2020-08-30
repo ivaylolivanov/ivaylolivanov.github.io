@@ -181,5 +181,5 @@ div.organization {
 
 div.hobbies li {
     list-style: none;
-    display: inline-table;
+    display: block;
 }
