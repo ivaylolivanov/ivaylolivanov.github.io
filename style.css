@@ -120,13 +120,7 @@ div.cv-image img{
     border: 3px solid #69c;
 }
 
-div.languages {
-    padding-top: 5em;
-    padding-bottom: 5em;
-}
-
 div.languages li {
-    margin:0 auto;
     list-style: none;
     position: relative;
     display: block;
@@ -137,7 +131,6 @@ div.languages li {
 div.skill-level-text {
     text-align: center;
     font-style: italic;
-    padding-bottom: 2em;
 }
 
 div.technical-skills li {
