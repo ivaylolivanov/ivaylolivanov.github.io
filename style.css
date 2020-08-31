@@ -1,9 +1,10 @@
-@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap';
+/* @import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap'; */
 
 body {
   margin: 0 auto;
   max-width: 50em;
-  font-family: "IBM Plex Serif", "Hack", "Inconsolata", "Arial",  sans-serif;
+  font-family: "Roboto", "Hack", "Inconsolata", "Arial",  sans-serif;
   line-height: 1.5;
   padding: 4em 1em;
   color: #566b78;
