@@ -135,16 +135,7 @@ div.skill-level-text {
 }
 
 div.technical-skills li {
-    display: inline;
-    width: 10px;
-    height: 10px;
-    background: #69c;
-    color: #f5f7f9;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: .5em .5em .5em .5em;
+    display: block;
 }
 
 .card {
