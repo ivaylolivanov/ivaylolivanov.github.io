@@ -175,3 +175,33 @@ div.hobbies li {
     list-style: none;
     display: block;
 }
+
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+div.experience {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+div.technical-skills {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 2;
+}
+
+div.education {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+div.hobbies {
+    grid-row-start:6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
