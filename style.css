@@ -2,12 +2,17 @@
 /* @import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap'; */
 
 body {
-  margin: 0 auto;
-  max-width: 50em;
-  font-family: "Roboto", "Hack", "Inconsolata", "Arial",  sans-serif;
-  line-height: 1.5;
-  padding: 4em 1em;
-  color: #566b78;
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Hack", "Inconsolata", "Arial",  sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    background: #303233;
+    color: #F5F5F5;
+}
+
+h1 {
+    color: #F5F5F5;
 }
 
 h2 {
@@ -15,75 +20,31 @@ h2 {
   padding-top: 1em;
 }
 
-h1,
 h2,
 strong {
-  color: #333;
-}
-
-code,
-pre {
-  background: #f5f7f9;
-  border-bottom: 1px solid #d8dee9;
-  color: #a7adba;
-}
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
-
-pre {
-  border-left: 2px solid #69c;
-}
-
-a {
-  color: #e81c4f;
+  color: #7EB2B9;
 }
 
 header {
-  background-color: #263d36;
+  background-color: #303233;
   line-height: 1.2;
   padding: 10vw 2em;
   text-align: center;
 }
 
 header h1 {
-  color: white;
+  color: #F5F5F51
   font-size: 2.5em;
   font-weight: 300;
 }
 
-th {
-    font-size: 1.5em;
-    text-align: left;
-}
-
-header a {
-  border: 1px solid #e81c4f;
-  border-radius: 290486px;
-  color: white;
-  font-size: 0.6em;
-  letter-spacing: 0.2em;
-  padding: 1em 2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: none 200ms ease-out;
-  transition-property: color, background;
-}
-
-header a:hover {
-  background:  #e81c4f;
-  color: white;
-}
-
 div.time-point {
     list-style: none;
-    background-color: #69c;
+    background-color: #848B94;
     display: inline;
     width: 10px;
     height: 10px;
-    color: #f5f7f9;
+    color: #F5F5F5;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -104,7 +65,7 @@ div.timeline-item:before {
     height: 20px;
     border-radius: 50%;
     display: inline;
-    border: medium solid #69c;
+    border: medium solid #848B94;
     margin-left: -1em;
 }
 
@@ -118,24 +79,20 @@ div.grid {
 
 div.name {
     grid-row-start: 1;
-    grid-column-start: 1;
 }
 
 div.cv-image {
     grid-row-start: 2;
-    grid-column-start: 1;
 }
 
 div.languages {
     grid-row-start: 2;
-    grid-column-start: 2;
 }
 
 div.cv-image img{
-    border: 0.5px solid #FF9F55;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -143,16 +100,15 @@ div.cv-image img{
 div.experience-and-education {
     grid-row-start: 3;
     grid-row-end: 6;
+    grid-column-start: 2;
 }
 
 div.technical-skills {
     grid-row-start: 3;
-    grid-column-start: 2;
 }
 
 div.hobbies {
     grid-row-start: 4;
-    grid-column-start: 2;
 }
 
 div.contact-info li {
@@ -164,13 +120,13 @@ div.contact-info li {
     height: 20px;
     border-radius: 50%;
     display: inline-block;
-    background-color: #69c;
+    background-color: #848B94;
 }
 
 .empty-circle {
     width: 14px;
     height: 14px;
-    border: 3px solid #69c;
+    border: 3px solid #848B94;
     border-radius: 50%;
     display: inline-block;
 }
@@ -181,7 +137,7 @@ div.contact-info li {
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     display: inline-block;
-    background-color: #69c;
+    background-color: #848B94;
 }
 
 .right-empty-half-of-circle {
@@ -191,7 +147,7 @@ div.contact-info li {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     display: inline-block;
-    border: 3px solid #69c;
+    border: 3px solid #848B94;
 }
 
 div.languages li {
@@ -215,7 +171,7 @@ div.technical-skills li {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 #45484A;
     transition: 0.3s;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -224,13 +180,13 @@ div.technical-skills li {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 #45484A;
 }
 
 .organization {
-    background-color: #FF9F55;
+    background-color: #F5F5F5;
     display: inline;
-    color: #f5f7f9;
+    color: #303233;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     border-top-right-radius: 40px;
