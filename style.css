@@ -77,13 +77,86 @@ header a:hover {
   color: white;
 }
 
+div.time-point {
+    list-style: none;
+    background-color: #69c;
+    display: inline;
+    width: 10px;
+    height: 10px;
+    color: #f5f7f9;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: 1em;
+    padding: .5em .5em .5em .5em;
+    z-index: 1;
+}
+
+div.timeline-item {
+    position: relative;
+}
+
+div.timeline-item:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline;
+    border: medium solid #69c;
+    margin-left: -1em;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 10px;
+    row-gap: 1em;
+}
+
+div.name {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+div.cv-image {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+div.languages {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
 div.cv-image img{
-    border: 0.5px solid #d8dee9;
+    border: 0.5px solid #FF9F55;
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
+}
+
+div.experience-and-education {
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+div.technical-skills {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+div.hobbies {
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+div.contact-info li {
+    list-style: none;
 }
 
 .circle {
@@ -135,14 +208,13 @@ div.skill-level-text {
 }
 
 div.technical-skills li {
-    display: block;
+    display: inline;
 }
 
 .card {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
-    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-bottom-right-radius: 30px;
@@ -155,10 +227,17 @@ div.technical-skills li {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-div.organization {
-    font-family: arial, sans-serif;
-    padding-bottom: 1em;
-    font-size: 1.3em;
+.organization {
+    background-color: #FF9F55;
+    display: inline;
+    color: #f5f7f9;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: .5em .5em .5em .5em;
+    margin: .5em;
+    z-index: 1;
 }
 
 .period,
@@ -168,40 +247,9 @@ div.organization {
 
 .description {
     padding: 1em;
-    text-align: justify;
 }
 
 div.hobbies li {
     list-style: none;
     display: block;
-}
-
-div.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-div.experience {
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-div.technical-skills {
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    grid-column-start: 2;
-}
-
-div.education {
-    grid-row-start: 5;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-div.hobbies {
-    grid-row-start:6;
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
