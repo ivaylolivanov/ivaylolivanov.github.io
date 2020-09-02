@@ -165,14 +165,90 @@ div.skill-level-text {
     font-style: italic;
 }
 
-div.technical-skills li {
-    display: inline;
+.level-border {
+    width: 90%;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    border: 3px solid #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.level3 {
+    width: 30%;
+    padding: .2em 0em .2em .2em;
+    background-color: #848B94;
+    color: #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.level4 {
+    width: 40%;
+    padding: .2em 0em .2em .2em;
+    background-color: #848B94;
+    color: #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.level5 {
+    width: 50%;
+    padding: .2em 0em .2em .2em;
+    background-color: #848B94;
+    color: #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.level6 {
+    width: 60%;
+    padding: .2em 0em .2em .2em;
+    background-color: #848B94;
+    color: #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.level7 {
+    width: 70%;
+    padding: .2em 0em .2em .2em;
+    background-color: #848B94;
+    color: #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.level8 {
+    width: 80%;
+    padding: .2em 0em .2em .2em;
+    background-color: #848B94;
+    color: #F5F5F5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .card {
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: 1em;
     padding: 1em;
+    background: #F5F5F5;
+    color: #303233;
     box-shadow: 0 4px 8px 0 #45484A;
     transition: 0.3s;
     border-bottom-right-radius: 30px;
