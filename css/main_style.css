@@ -182,8 +182,9 @@ div.technical-skills li {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 #45484A;
+    box-shadow: 0 8px 16px 0 #7EB2B9;
 }
+
 
 .organization {
     background-color: #F5F5F5;
