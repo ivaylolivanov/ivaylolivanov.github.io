@@ -160,6 +160,11 @@ div.languages li {
     border-radius: 10em;
 }
 
+div.technical-skills li {
+    list-style: none;
+    margin-left: -1em;
+}
+
 div.skill-level-text {
     text-align: center;
     font-style: italic;
