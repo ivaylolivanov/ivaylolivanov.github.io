@@ -113,6 +113,17 @@ div.hobbies {
     grid-row-start: 4;
 }
 
+div.contact-info {
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+div.email-box {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 div.contact-info li {
     list-style: none;
 }
