@@ -93,8 +93,8 @@ div.languages {
 
 div.cv-image img{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     border-radius: 50%;
 }
