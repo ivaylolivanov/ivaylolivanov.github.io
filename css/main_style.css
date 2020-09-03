@@ -128,6 +128,10 @@ div.contact-info li {
     list-style: none;
 }
 
+div.contact-info a {
+    color: #7EB2B9;
+}
+
 div.email-box-background {
     background-color: #848B94;
     padding: .5em;
