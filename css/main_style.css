@@ -117,6 +117,12 @@ div.contact-info li {
     list-style: none;
 }
 
+div.email-box-background {
+    background-color: #848B94;
+    padding: .5em;
+    border-radius: 40px 40px 40px 40px;
+}
+
 .circle {
     width: 20px;
     height: 20px;
@@ -287,4 +293,31 @@ div.skill-level-text {
 div.hobbies li {
     list-style: none;
     display: block;
+}
+
+.email-subject input,
+.email-address input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    padding-left: 1em;
+    width: 90%;
+    height: 2em;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.email-message textarea {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    padding-left: 1em;
+    width: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius:  20px;
+    border-bottom-left-radius: 20px;
+}
+
+.email-send-button input {
+    margin-right: 4em;
+    border-radius: 40px;
+    width: 10em;
+    height: 2em;
 }
