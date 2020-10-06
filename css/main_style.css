@@ -16,6 +16,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: #F5F5F5;
 }
 
@@ -44,11 +45,6 @@ header h1 {
 
 #about-me {
     text-align: justify;
-}
-
-#about-me h1{
-    text-align: center;
-    padding-bottom: 2em;
 }
 
 article {
