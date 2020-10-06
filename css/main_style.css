@@ -46,6 +46,11 @@ div.about-me {
     text-align: justify;
 }
 
+div.about-me h1{
+    text-align: center;
+    padding-bottom: 2em;
+}
+
 article {
     float: left;
     padding: 10px;
