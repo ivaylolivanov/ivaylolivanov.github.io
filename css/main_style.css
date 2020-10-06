@@ -42,11 +42,11 @@ header h1 {
   font-weight: 300;
 }
 
-div.about-me {
+#about-me {
     text-align: justify;
 }
 
-div.about-me h1{
+#about-me h1{
     text-align: center;
     padding-bottom: 2em;
 }
