@@ -1,9 +1,13 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap';
 /* @import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap'; */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60em;
     font-family: "Roboto", "Hack", "Inconsolata", "Arial",  sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
@@ -38,6 +42,19 @@ header h1 {
   font-weight: 300;
 }
 
+article {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    display: table;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 div.time-point {
     list-style: none;
     background-color: #848B94;
@@ -51,84 +68,32 @@ div.time-point {
     border-bottom-right-radius: 40px;
     margin-left: 1em;
     padding: .5em .5em .5em .5em;
-    z-index: 1;
 }
 
-div.timeline-item {
-    position: relative;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-div.timeline-item:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline;
-    border: medium solid #848B94;
-    margin-left: -1em;
-}
-
-div.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    column-gap: 10px;
-    row-gap: 1em;
-}
-
-div.name {
-    grid-row-start: 1;
-}
-
-div.cv-image {
-    grid-row-start: 2;
-}
-
-div.languages {
-    grid-row-start: 2;
-}
-
-div.cv-image img{
-    position: relative;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-div.experience-and-education {
-    grid-row-start: 3;
-    grid-row-end: 6;
-    grid-column-start: 2;
-}
-
-div.technical-skills {
-    grid-row-start: 3;
-}
-
-div.hobbies {
-    grid-row-start: 4;
-}
-
-div.contact-info {
-    grid-row-start: 4;
-    grid-column-start: 2;
-}
-
-div.email-box {
-    grid-row-start: 5;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-div.contact-info li {
+#contact-info li {
     list-style: none;
 }
 
-div.contact-info a {
+#contact-info form{
+    float: left;
+    padding: 10px;
+    width: 50%;
+    display: table;
+}
+
+#social-media-contact {
+    float: left;
+    padding: 10px;
+    width: 30%;
+    display: table;
+    text-align: center;
+}
+
+#social-media-contact i {
+    font-size: 4em;
+}
+
+#social-media-contact a {
     color: #7EB2B9;
 }
 
@@ -147,30 +112,11 @@ div.email-box-background {
 }
 
 .empty-circle {
-    width: 14px;
-    height: 14px;
+    width: 1.11em;
+    height: 1.11em;
     border: 3px solid #848B94;
     border-radius: 50%;
     display: inline-block;
-}
-
-.half-full-circle-left {
-    width: 10px;
-    height: 20px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    display: inline-block;
-    background-color: #848B94;
-}
-
-.right-empty-half-of-circle {
-    margin-left: -4.5px;
-    width: 4px;
-    height: 14px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    display: inline-block;
-    border: 3px solid #848B94;
 }
 
 div.languages li {
@@ -181,7 +127,14 @@ div.languages li {
     border-radius: 10em;
 }
 
-div.technical-skills li {
+#skills section {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    display: table;
+}
+
+#technical-skills li {
     list-style: none;
     margin-left: -1em;
 }
@@ -293,7 +246,6 @@ div.skill-level-text {
     border-bottom-right-radius: 40px;
     padding: .5em .5em .5em .5em;
     margin: .5em;
-    z-index: 1;
 }
 
 .period,
@@ -305,7 +257,7 @@ div.skill-level-text {
     padding: 1em;
 }
 
-div.hobbies li {
+#hobbies li {
     list-style: none;
     display: block;
 }
@@ -335,4 +287,33 @@ div.hobbies li {
     border-radius: 40px;
     width: 10em;
     height: 2em;
+}
+
+@media (max-width: 500px) {
+    div.organization {
+        display: block;
+    }
+
+    div.time-point {
+        background-color: #303233;
+    }
+}
+
+@media (max-width: 600px) {
+    article {
+        width: 100%;
+        height: auto;
+    }
+
+    #experience-and-education {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    article {
+        width: 100%;
+        height: auto;
+    }
 }

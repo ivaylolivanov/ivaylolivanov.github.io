@@ -1,71 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
     <script src="https://kit.fontawesome.com/7d86d31f9f.js" crossorigin="anonymous"></script>
     <title>Ivaylo Lenkov Ivanov - resume</title>
   </head>
   <body>
 
-    <div class="grid">
-      <div class="name">
-        <h1>Ivaylo Lenkov Ivanov</h1>
-      </div>
+    <div class="about-me">
+      <p>
+        Hello, my name is Ivaylo Lenkov Ivanov. I graduated a bachelor program
+        in German at the Technical University of Sofia in Computer Systems and
+        Technologies. I have 2 years professional experience as an automation
+        developer in Bash, Perl, Python and Groovy. I use my free time to
+        gather experience in my passion - game development. I would love to
+        embark on challenging opportunities to enrich my knowledge by creating
+        or expanding virtual worlds.
+      </p>
+    </div>
 
-      <div class="cv-image">
-        <img src="images/cv_image.jpg" alt="Avatar">
-      </div>
-
-      <div class="languages">
-        <h2>Languages</h2>
-        <table>
-
-          <tr>
-            <td>Bulgarian</td>
-            <td>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </td>
-          </tr>
-          <tr><td colspan="2"><div class="skill-level-text">Native</div></td></tr>
-
-          <tr>
-            <td>English</td>
-            <td>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="empty-circle"></span>
-            </td>
-          </tr>
-          <tr><td colspan="2"><div class="skill-level-text">Professionally</div></td></tr>
-
-          <tr>
-            <td>German</td>
-            <td>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="half-full-circle-left"></span>
-              <span class="right-empty-half-of-circle"></span>
-              <span class="empty-circle"></span>
-            </td>
-          </tr>
-          <tr><td colspan="2"><div class="skill-level-text">Advanced</div></td></tr>
-
-        </table>
-      </div>
-
-      <div class="experience-and-education">
-        <h2>Experience & Education</h2>
-
-        <div class="timeline-item">
-          <div class="time-point">11.2018 - Present<span class="organization">MM Solutions</span></div>
+    <section id="experience-and-education">
+      <section id="experience">
+        <h2>Experience</h2>
+        <article class="timeline-item">
+          <div class="time-point">11.2018 - Present<div class="organization">MM Solutions</div></div>
           <div class="card">
             <div class="location">
               Sofia, Bulgaria
@@ -80,9 +39,9 @@
               repositories.
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item">
+        <article class="timeline-item">
           <div class="time-point">11.2017 - 08.2018<span class="organization">EMIS</span></div>
           <div class="card">
             <div class="location">
@@ -96,9 +55,12 @@
               for content formatting.
             </div>
           </div>
-        </div>
+        </article>
+      </section>
 
-        <div class="timeline-item">
+      <section id="education">
+        <h2>Education</h2>
+        <article class="timeline-item">
           <div class="time-point">09.2014 - 07.2020<div class="organization">Technical University of Sofia</div></div>
           <div class="card">
             <div class="specialty">
@@ -106,9 +68,9 @@
             </div>
             <div class="location">Sofia, Bulgaria</div>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item">
+        <article class="timeline-item">
           <div class="time-point">09.2009 - 06.2014<div class="organization">High school "Geo Milev"</div></div>
           <div class="card">
             <div class="specialty">
@@ -119,42 +81,96 @@
             </div>
             <div class="location">Stara Zagora, Bulgaria</div>
           </div>
-        </div>
+        </article>
+      </section>
+    </section>
 
-      </div>
-
-      <div class="technical-skills">
+    <section id="skills">
+      <section id="technical-skills">
         <h2>Technical skills</h2>
-        <p>Programming language</p>
-        <ul>
-          <li><div class="level-border"><div class="level6">C++</div></div></li>
-          <li><div class="level-border"><div class="level8">Perl</div></div></li>
-          <li><div class="level-border"><div class="level7">Python</div></div></li>
-          <li><div class="level-border"><div class="level8">Bash</div></div></li>
-          <li><div class="level-border"><div class="level5">Groovy</div></div></li>
-          <li><div class="level-border"><div class="level4">HTML</div></div></li>
-          <li><div class="level-border"><div class="level4">CSS</div></div></li>
-        </ul>
-        <p>Software</p>
-        <ul>
-          <li><div class="level-border"><div class="level8">Emacs</div></div></li>
-          <li><div class="level-border"><div class="level8">Jenkins</div></div></li>
-          <li><div class="level-border"><div class="level8">Git</div></div></li>
-          <li><div class="level-border"><div class="level7">Aseprite</div></div></li>
-          <li><div class="level-border"><div class="level4">Unity</div></div></li>
-          <li><div class="level-border"><div class="level4">Visual Studio</div></div></li>
-          <li><div class="level-border"><div class="level3">Vim</div></div></li>
-          <li><div class="level-border"><div class="level3">Krita</div></div></li>
-          <li><div class="level-border"><div class="level4">Blender</div></div></li>
-        </ul>
-        <p>Operating Systems</p>
-        <ul>
-          <li><div class="level-border"><div class="level7">Linux</div></div></li>
-          <li><div class="level-border"><div class="level5">Windows</div></div></li>
-        </ul>
-      </div>
+        <article>
+          <p>Programming language</p>
+          <ul>
+            <li><div class="level-border"><div class="level6">C++</div></div></li>
+            <li><div class="level-border"><div class="level8">Perl</div></div></li>
+            <li><div class="level-border"><div class="level7">Python</div></div></li>
+            <li><div class="level-border"><div class="level8">Bash</div></div></li>
+            <li><div class="level-border"><div class="level5">Groovy</div></div></li>
+            <li><div class="level-border"><div class="level4">HTML</div></div></li>
+            <li><div class="level-border"><div class="level4">CSS</div></div></li>
+          </ul>
+        </article>
+        <article>
+          <p>Software</p>
+          <ul>
+            <li><div class="level-border"><div class="level8">Emacs</div></div></li>
+            <li><div class="level-border"><div class="level8">Jenkins</div></div></li>
+            <li><div class="level-border"><div class="level8">Git</div></div></li>
+            <li><div class="level-border"><div class="level7">Aseprite</div></div></li>
+            <li><div class="level-border"><div class="level4">Unity</div></div></li>
+            <li><div class="level-border"><div class="level4">Visual Studio</div></div></li>
+            <li><div class="level-border"><div class="level3">Vim</div></div></li>
+            <li><div class="level-border"><div class="level3">Krita</div></div></li>
+            <li><div class="level-border"><div class="level4">Blender</div></div></li>
+          </ul>
+        </article>
+        <article>
+          <p>Operating Systems</p>
+          <ul>
+            <li><div class="level-border"><div class="level7">Linux</div></div></li>
+            <li><div class="level-border"><div class="level5">Windows</div></div></li>
+          </ul>
+        </article>
+      </section>
 
-      <div class="hobbies">
+      <section id="languages">
+        <article>
+          <table>
+            <h2>Languages</h2>
+            <tr>
+              <td>Bulgarian</td>
+              <td>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </td>
+            </tr>
+            <tr><td colspan="2"><div class="skill-level-text">Native</div></td></tr>
+
+            <tr>
+              <td>English</td>
+              <td>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="empty-circle"></span>
+              </td>
+            </tr>
+            <tr><td colspan="2"><div class="skill-level-text">Professionally</div></td></tr>
+
+            <tr>
+              <td>German</td>
+              <td>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="empty-circle"></span>
+                <span class="empty-circle"></span>
+              </td>
+            </tr>
+            <tr><td colspan="2"><div class="skill-level-text">Advanced</div></td></tr>
+
+          </table>
+        </article>
+      </section>
+
+      <section id="hobbies">
         <h2>Hobbies</h2>
         <table>
           <tr><td><i class="fas fa-laptop"></i></td><td> Programming</td>
@@ -164,45 +180,45 @@
           <tr><td><i class="fas fa-cog"></i></td><td> Tweaking Emacs</td>
           <tr><td><i class="fas fa-snowboarding"></i></td><td> Snowboarding</td>
           <tr><td><i class="far fa-edit"></i></td><td> Drawing</td>
-          <tr><td><i class="fas fa-gamepad"></i></td><td>Playing computer games</td></tr>
+          <tr><td><i class="fas fa-gamepad"></i></td><td>Playing video games</td></tr>
           <tr><td></td><td>
               <p>
                 <i>Favorite games</i>: World of Warcraft, StarCraft2, Summoners War, TimeSplitters: Future Perfect, Stardew Valley, Age of Empires 2
               </p>
           </td></tr>
         </table>
-      </div>
+      </section>
 
-      <div class="email-box">
-        <h2>Send me an e-mail</h2>
-        <form action="mailto:ivaylolivanov95@gmail.com" method="post" enctype="text/plain">
-          <div class="email-box-background">
-            <div class="email-address">
-              <input name="email-address" type="text" maxlength="80" placeholder="email-address@example.com">
-            </div>
-            <div class="email-subject">
-              <input name="email-subject" type="text" maxlength="150" placeholder="Subject">
-            </div>
-            <div class="email-message">
-              <textarea name="email-message" cols="50" rows="5" placeholder="Message..."></textarea>
-            </div>
-            <div class="email-send-button" align="right">
-              <input type="submit" name="send-email" value="Submit">
-            </div>
+    </section>
+
+    <section id="contact-info">
+      <h2>Contact</h2>
+
+      <form action="mailto:ivaylolivanov95@gmail.com" method="post" enctype="text/plain">
+        <div class="email-box-background">
+          <div class="email-address">
+            <input name="email-address" type="text" maxlength="80" placeholder="email-address@example.com">
           </div>
-        </form>
-      </div>
+          <div class="email-subject">
+            <input name="email-subject" type="text" maxlength="150" placeholder="Subject">
+          </div>
+          <div class="email-message">
+            <textarea name="email-message" cols="50" rows="5" placeholder="Message..."></textarea>
+          </div>
+          <div class="email-send-button" align="right">
+            <input type="submit" name="send-email" value="Submit">
+          </div>
+        </div>
+      </form>
 
-      <div class="contact-info">
-        <h2>Contact info</h2>
-        <table>
-          <tr><td><i class="far fa-paper-plane"></i></td><td>ivaylolivanov95@gmail.com</td></tr>
-          <tr><td><i class="fas fa-compass"></i></td><td>Sofia, Bulgaria</td></tr>
-          <tr><td><a href="https://twitter.com/Ivailo64704875"><i class="fab fa-twitter"></i></a></td><td>Twitter</td></tr>
-        </table>
-      </div>
+      <aside id="social-media-contact">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ivaylo-ivanov-ba8120127"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/Ivailo64704875"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </aside>
 
-    </div>
+    </section>
 
   </body>
 </html>
