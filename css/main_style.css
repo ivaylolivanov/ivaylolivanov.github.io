@@ -52,7 +52,7 @@ header h1 {
     display: table;
 }
 
-#profile-picture img{
+#profile-picture img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
