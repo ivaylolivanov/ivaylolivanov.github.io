@@ -45,15 +45,29 @@ header h1 {
   font-weight: 300;
 }
 
-#about-me {
-    text-align: justify;
+#profile-picture {
+    float: left;
+    padding: 2em;
+    width: 50%;
+    display: table;
+}
+
+#profile-picture img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 article {
     float: left;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 50%;
     display: table;
+}
+
+article p {
+    text-align: justify;
 }
 
 section:after {
@@ -77,31 +91,25 @@ div.time-point {
     padding: .5em .5em .5em .5em;
 }
 
-#contact-info li {
-    list-style: none;
-}
-
-#contact-info form{
-    float: left;
-    padding: 10px;
-    width: 50%;
-    display: table;
-}
-
 #social-media-contact {
     float: left;
-    padding: 10px;
-    width: 30%;
+    width: 100%;
     display: table;
-    text-align: center;
+}
+
+#social-media-contact table{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #social-media-contact i {
-    font-size: 4em;
+    font-size: 2em;
+    padding: 1em;
 }
 
 #social-media-contact a {
     color: #7EB2B9;
+    display: inline;
 }
 
 div.email-box-background {
@@ -111,8 +119,8 @@ div.email-box-background {
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 1.11em;
+    height: 1.11em;
     border-radius: 50%;
     display: inline-block;
     background-color: #848B94;
@@ -124,21 +132,6 @@ div.email-box-background {
     border: 3px solid #848B94;
     border-radius: 50%;
     display: inline-block;
-}
-
-div.languages li {
-    list-style: none;
-    position: relative;
-    display: block;
-    margin: .5em 0;
-    border-radius: 10em;
-}
-
-#skills section {
-    float: left;
-    padding: 10px;
-    width: 50%;
-    display: table;
 }
 
 #technical-skills li {
@@ -296,13 +289,30 @@ div.skill-level-text {
     height: 2em;
 }
 
+@media (max-width: 450px) {
+    .circle {
+        width: 1em;
+        height: 1em;
+    }
+
+    .empty-circle {
+        width: 1em;
+        height: 1em;
+    }
+}
+
 @media (max-width: 500px) {
+    #profile-picture img {
+        display: none;
+    }
+
     div.organization {
         display: block;
     }
 
     div.time-point {
         background-color: #303233;
+        padding: 0;
     }
 }
 
@@ -315,6 +325,12 @@ div.skill-level-text {
     #experience-and-education {
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+@media (max-width:  650px) {
+    #languages td {
+        display: block;
     }
 }
 
