@@ -301,6 +301,16 @@ div.skill-level-text {
     }
 }
 
+@media (max-width: 480px) {
+    #social-media-contact table {
+        width: 80%;
+    }
+
+    #social-media-contact td {
+        display: inline-table;
+    }
+}
+
 @media (max-width: 500px) {
     #profile-picture img {
         display: none;
