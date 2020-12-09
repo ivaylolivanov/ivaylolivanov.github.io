@@ -33,10 +33,13 @@ strong {
 }
 
 header {
-  background-color: #303233;
-  line-height: 1.2;
-  padding: 10vw 2em;
-  text-align: center;
+    position: fixed;
+    background-color: #303233;
+    line-height: 1.5;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header h1 {
@@ -44,6 +47,31 @@ header h1 {
     font-size: 2.5em;
     font-weight: 300;
 }
+
+.menu-bar {
+    background-color: #7EB2B9;
+    background-image: linear-gradient(to bottom, #0003, transparent);
+    border-bottom: 1px solid #0003;
+    box-shadow: 0 0 32px #0003;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.menu-bar > a {
+    color:  #303233;
+    padding: .1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-bar > a:hover {
+    background: #848B94;
+    color: #F5F5F5;
+}
+
+.menu-bar {
+    display: grid;
+    grid-template-columns: repeat(var(--items), 1fr);
+    position: relative;
 }
 
 #profile-picture {
