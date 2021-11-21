@@ -89,6 +89,20 @@ header h1 {
     border-radius: 50%;
 }
 
+#name {
+    text-align: Left;
+    color: #F5F5F5;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+#role {
+    color: #F5F5F5;
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-left: 4em;
+}
+
 article {
     float: left;
     padding-left: 10px;
