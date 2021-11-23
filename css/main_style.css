@@ -112,6 +112,12 @@ section:after {
     display: block;
 }
 
+.youtube-video-container {
+    padding-top: 4em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
 #social-media-contact {
     float: left;
     width: 100%;
