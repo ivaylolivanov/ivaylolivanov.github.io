@@ -48,32 +48,6 @@ header h1 {
     font-weight: 300;
 }
 
-.menu-bar {
-    background-color: #7EB2B9;
-    background-image: linear-gradient(to bottom, #0003, transparent);
-    border-bottom: 1px solid #0003;
-    box-shadow: 0 0 32px #0003;
-    font-size: 1.5em;
-    font-weight: 400;
-}
-.menu-bar > a {
-    color:  #303233;
-    padding: .1em;
-    text-align: center;
-    text-decoration: none;
-}
-
-.menu-bar > a:hover {
-    background: #848B94;
-    color: #F5F5F5;
-}
-
-.menu-bar {
-    display: grid;
-    grid-template-columns: repeat(var(--items), 1fr);
-    position: relative;
-}
-
 #profile-picture {
     float: left;
     padding: 2em;
@@ -138,21 +112,6 @@ section:after {
     display: block;
 }
 
-div.time-point {
-    list-style: none;
-    background-color: #848B94;
-    display: inline;
-    width: 10px;
-    height: 10px;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    margin-left: 1em;
-    padding: .5em .5em .5em .5em;
-}
-
 #social-media-contact {
     float: left;
     width: 100%;
@@ -172,115 +131,6 @@ div.time-point {
 #social-media-contact a {
     color: #7EB2B9;
     display: inline;
-}
-
-div.email-box-background {
-    background-color: #848B94;
-    padding: .5em;
-    border-radius: 40px 40px 40px 40px;
-}
-
-.circle {
-    width: 1.11em;
-    height: 1.11em;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #848B94;
-}
-
-.empty-circle {
-    width: 1.11em;
-    height: 1.11em;
-    border: 3px solid #848B94;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-#technical-skills li {
-    list-style: none;
-    margin-left: -1em;
-}
-
-div.skill-level-text {
-    text-align: center;
-    font-style: italic;
-}
-
-.level-border {
-    width: 90%;
-    margin-top: .2em;
-    margin-bottom: .2em;
-    border: 3px solid #848B94;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.level3 {
-    width: 30%;
-    padding: .2em 0em .2em .2em;
-    background-color: #848B94;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.level4 {
-    width: 40%;
-    padding: .2em 0em .2em .2em;
-    background-color: #848B94;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.level5 {
-    width: 50%;
-    padding: .2em 0em .2em .2em;
-    background-color: #848B94;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.level6 {
-    width: 60%;
-    padding: .2em 0em .2em .2em;
-    background-color: #848B94;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.level7 {
-    width: 70%;
-    padding: .2em 0em .2em .2em;
-    background-color: #848B94;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.level8 {
-    width: 80%;
-    padding: .2em 0em .2em .2em;
-    background-color: #848B94;
-    color: #F5F5F5;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
 }
 
 .card {
@@ -335,59 +185,6 @@ div.skill-level-text {
 .project-item-button a {
     color: #F5F5F5;
     font-size: 2em;
-}
-
-.organization {
-    background-color: #F5F5F5;
-    display: inline;
-    color: #303233;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: .5em .5em .5em .5em;
-    margin: .5em;
-}
-
-.period,
-.specialty {
-    font-size: 1.15em;
-}
-
-.description {
-    padding: 1em;
-}
-
-#hobbies li {
-    list-style: none;
-    display: block;
-}
-
-.email-subject input,
-.email-address input {
-    margin-left: 1em;
-    margin-bottom: .5em;
-    padding-left: 1em;
-    width: 90%;
-    height: 2em;
-    border-radius: 40px 40px 40px 40px;
-}
-
-.email-message textarea {
-    margin-left: 1em;
-    margin-bottom: .5em;
-    padding-left: 1em;
-    width: 90%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:  20px;
-    border-bottom-left-radius: 20px;
-}
-
-.email-send-button input {
-    margin-right: 4em;
-    border-radius: 40px;
-    width: 10em;
-    height: 2em;
 }
 
 @media (max-width: 450px) {
