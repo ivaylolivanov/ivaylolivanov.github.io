@@ -8,131 +8,145 @@
   </head>
   <body>
 
-    <h1 id="name">Ivaylo Ivanov</h1>
-    <span class="line"></span>
-    <span class="indent-line"></span>
-    <h2 id="role">Game developer</h2>
+    <header>
+      <a href="#about-me">about me</a>
+      <a href="#portfolio-section">projects</a>
+      <a id="contact-me-button" href="#contact-information">Contact me</a>
+    </header>
 
-    <div class="youtube-video-container">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/JQi19gH8vcY"
-        title="Ivaylo Ivanov - Game Development Demo Reel"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-
-    <section id="projects">
-      <div class="project-item">
-        <img src="./projects/laser-chess/screenshots/laser-chess-wallpaper.png" alt="Laser chess wallpaper">
-        <h3>Laser chess</h3>
-        <p>Battle in strategic fights against alien enemy, made in Unity</p>
-        <div class="project-item-button">
-          <a href="./projects/laser-chess/index.html"><i class="fas fa-play"></i></a>
-        </div>
-        <div class="project-item-button">
-          <a href="https://github.com/ivaylolivanov/laser-chess"><i class="fab fa-github-square"></i></a>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <img src="./projects/keep-the-forest/screenshots/LoadingScreen.png" alt="Keep the forest image">
-        <h3>Keep the forest</h3>
-        <p>Defend the forest against the humans and keep your home, made in Unity</p>
-        <div class="project-item-button">
-          <a href="./projects/keep-the-forest/index.html"><i class="fas fa-play"></i></a>
-        </div>
-        <div class="project-item-button">
-          <a href="https://github.com/ivaylolivanov/keep-the-forest"><i class="fab fa-github-square"></i></a>
-        </div>
-        <div class="project-item-button">
-          <a href="https://m00ns7ruck.itch.io/keep-the-forest"><i class="fab fa-itch-io"></i></a>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <img src="./projects/air-pirates/screenshots/air-pirates.png" alt="Air pirates">
-        <h3>Air pirates</h3>
-        <p>Navigate through the skies while being attacked by bunch of pirates.</p>
-        <div class="project-item-button">
-          <a href="./projects/air-pirates/index.html"><i class="fas fa-play"></i></a>
-        </div>
-        <div class="project-item-button">
-          <a href="https://github.com/ivaylolivanov/air-pirates"><i class="fab fa-github-square"></i></a>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <img src="./projects/block-breaker/screenshots/block-breaker.png" alt="Block breaker">
-        <h3>Block breaker</h3>
-        <p>Remake of "Arcanoid", made in Unity</p>
-        <div class="project-item-button">
-          <a href="./projects/block-breaker/index.html"><i class="fas fa-play"></i></a>
-        </div>
-        <div class="project-item-button">
-          <a href="https://github.com/ivaylolivanov/BlockBreakerUnity"><i class="fab fa-github-square"></i></a>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <img src="./projects/late-night-umami/screenshots/gameplay.png" alt="Late night umami gameplay image">
-        <h3>Late night umami</h3>
-        <p>Cook with your last ingredients for hungry people in haste passing by your restaurant after work, made in Unity</p>
-        <p>Submission for Brackeys Game Jam 2021.1</p>
-        <div class="project-item-button">
-          <a href="https://github.com/ivaylolivanov/LateNightUmami"><i class="fab fa-github-square"></i></a>
-        </div>
-        <div class="project-item-button">
-          <a href="https://m00ns7ruck.itch.io/late-night-umami"><i class="fab fa-itch-io"></i></a>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="about-me">
-      <picture id="profile-picture">
-        <img src="./images/profile-picture-cut.jpg" alt="Profile picture">
-      </picture>
-
+    <div class="grid-container">
       <article>
-        <h2>About me</h2>
+
+        <h1>Ivaylo Ivanov</h1>
+        <h2>Game developer</h2>
+
         <p>
           Hello, my name is Ivaylo Lenkov Ivanov. My passion is game development.
           In the past few years I have been seriously working to enrich my
-          experience in the field by following courses, doing projects and
-          reading books. Which led me to the possibility to participate in some
-          freelance projects.
-        </p>
-        <p>
-          My non game development experience is primarily with automation
-          development.
-          I successfully graduated bachelor program in Computer Systems Technology
-          in German at the Technical University Sofia.
+          experience in the field by following courses, doing projects and reading
+          books. Which led me to the possibility to participate in some freelance
+          projects. My non game development experience is primarily with automation
+          development. I successfully graduated bachelor program in Computer Systems
+          Technology in German at the Technical University Sofia.
         </p>
 
-        <aside id="social-media-contact">
-          <table>
-            <tr>
-              <td>
-                <a href="mailto:ivaylolivanov95@gmail.com"><i class="fas fa-envelope"></i></a>
-              </td>
-              <td>
-                <a href="https://www.linkedin.com/in/ivaylo-ivanov-ba8120127"><i class="fab fa-linkedin"></i></a>
-              </td>
-              <td>
-                <a href="https://twitter.com/Ivailo64704875"><i class="fab fa-twitter"></i></a>
-              </td>
-              <td>
-                <a href="https://github.com/ivaylolivanov"><i class="fab fa-github-square"></i></a>
-              </td>
-            </tr>
-          </table>
-        </aside>
       </article>
-    </section>
+
+      <picture id="profile-picture">
+        <img src="./images/profile-picture-cut.jpg" alt="Profile picture">
+      </picture>
+    </div>
+
+    <div id="portfolio-separator">
+      <h2>My work</h2>
+    </div>
+
+    <div id="portfolio-section" class="grid-container">
+
+      <div class="portfolio-entry">
+        <div class="project-cover" id="keep-the-forest-cover"></div>
+        <div class="project-information-grid">
+          <div class="project-description">
+            <h3>Keep the forest</h3>
+            <p>
+              Defend the forest against the humans and keep your home, made
+              in Unity.
+            </p>
+          </div>
+          <div class="project-button">
+            <a href="./projects/keep-the-forest/index.html"><i class="fas fa-play"></i></a>
+          </div>
+          <div class="project-button">
+            <a href="https://github.com/ivaylolivanov/keep-the-forest"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+        <div class="project-cover" id="laser-chess-cover"></div>
+        <div class="project-information-grid">
+          <div class="project-description">
+            <h3>Laser chess</h3>
+            <p>
+              Battle in strategic fights against alien enemy, made in Unity.
+            </p>
+          </div>
+          <div class="project-button">
+            <a href="./projects/laser-chess/index.html"><i class="fas fa-play"></i></a>
+          </div>
+          <div class="project-button">
+            <a href="https://github.com/ivaylolivanov/laser-chess"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+        <div class="project-cover" id="air-pirates-cover"></div>
+        <div class="project-information-grid">
+          <div class="project-description">
+            <h3>Air pirates</h3>
+            <p>
+              Navigate through the skies while being attacked by bunch of
+              pirates, made in Unity.
+            </p>
+          </div>
+          <div class="project-button">
+            <a href="./projects/air-pirates/index.html"><i class="fas fa-play"></i></a>
+          </div>
+          <div class="project-button">
+            <a href="https://github.com/ivaylolivanov/air-pirates"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+        <div class="project-cover" id="late-night-umami-cover"></div>
+        <div class="project-information-grid">
+          <div class="project-description">
+            <h3>Late night umami</h3>
+            <p>
+              Cook the last ingredients for hungry people, going home
+              after work, made in Unity - Brackeys Game Jam 2021.1.
+            </p>
+          </div>
+          <div class="project-button">
+            <a href="./projects/laser-chess/index.html"><i class="fas fa-play"></i></a>
+          </div>
+          <div class="project-button">
+            <a href="https://github.com/ivaylolivanov/laser-chess"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+        <div class="project-cover" id="block-breaker-cover"></div>
+        <div class="project-information-grid">
+          <div class="project-description">
+            <h3>Block breaker</h3>
+            <p>
+              Remake of "Arcanoid", made in Unity.
+            </p>
+          </div>
+          <div class="project-button">
+            <a href="./projects/block-breaker/index.html"><i class="fas fa-play"></i></a>
+          </div>
+          <div class="project-button">
+            <a href="https://github.com/ivaylolivanov/BlockBreakerUnity"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer id="contact-information">
+      <h2>If you like my work, you can contact me</h2>
+      <address>
+        <a href="mailto:ivaylolivanov95@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ivaylo-ivanov-ba8120127"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/Ivailo64704875"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/ivaylolivanov"><i class="fab fa-github-square"></i></a>
+      </address>
+    </footer>
 
   </body>
 </html>
