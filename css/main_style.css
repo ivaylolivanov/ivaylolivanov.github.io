@@ -75,7 +75,7 @@ address a {
 }
 
 .grid-container {
-    max-width: 90em;
+    max-width: 90vw;
     padding: 9.25vw;
 
     display: grid;
