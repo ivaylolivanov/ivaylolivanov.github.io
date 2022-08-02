@@ -151,7 +151,7 @@ address a {
     background: #202F27;
 
     display: grid;
-    grid-template-columns: 70% 15% 15%;
+    grid-template-columns: 7fr 1fr 1fr;
     grid-gap: 0;
 
     border-radius: .5vw;
