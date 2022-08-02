@@ -111,6 +111,7 @@ address a {
 
 #portfolio-separator h2 {
     text-align: center;
+    margin-top: -2vw;
     padding-top: 5.5vw;
 }
 
