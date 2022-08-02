@@ -52,6 +52,7 @@ header a {
 }
 
 footer {
+    margin-top: -7vw;
     padding: 1vw;
     background-color: #181F1B;
     text-align: center;
