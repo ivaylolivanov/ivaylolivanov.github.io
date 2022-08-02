@@ -128,7 +128,7 @@ address a {
 
 #portfolio-section {
     background: rgba(32, 32, 32, 1);
-    grid-row-gap: 2em;
+    grid-row-gap: 2vw;
 }
 
 #portfolio-section > *:nth-child(3n-1):nth-last-of-type(1) {
