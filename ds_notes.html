@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="prism/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/notes_style.css">
+    <title>Notes on data structures</title>
+  </head>
+  <body>
+    <script src="prism/prism.js"></script>
+    <h1>Notes on data structures</h1>
+    <ul>
+      <li>Main properties to analyze in an algorithm</li>
+      <ul>
+        <li><strong>Simplicity</strong></li>
+        <li><strong>Accuracy</strong></li>
+        <li><strong>Performance</strong>
+          <p><i>(The consumption of CPU, Memory and other resources.)</i></p>
+        </li>
+      </ul>
+      <li>Algorithm complexity <i>(aka. running time)</i> - total number of primitive operations <i>(machine independent steps)</i></li>
+      <figure>
+        <pre><code class="language-csharp">
+          void exampleFunc(int n) {
+              int flag = 0;
+              for(int i = 0; i < n; i++) {
+                  for(int j = 0; j < n; j++) {
+                      flag = 1;
+                  }
+              }
+          }
+        </code></pre>
+        <figcaption>Example 1. Running time complexity ~= n*n</figcaption>
+      </figure>
+      <li>Time complexity</li>
+      <ul>
+        <li>Worst case</li>
+        <li>Average case</li>
+        <li>Best case</li>
+      </ul>
+      <figure>
+        <pre><code class="language-csharp">
+          void exampleFunc(int[] listOfNumbers, int size) {
+              for(int i = 0; i < listOfNumbers.Length; i++) {
+                  if(listOfNumbers[i] % 2 == size) {
+                      Console.WriteLine("There is number, which reminder of dividing on 2 is equal to the size of the the array.");
+                  }
+              }
+          }
+        </code></pre>
+        <figcaption>Example 2. Time complexity</figcaption>
+      </figure>
+      <ul>
+        <li>Take into account when "size" approaches infinity</li>
+        <li>When scaling, the algorithm should still compute in finite and practical time</li>
+        <li>Order of the algorithm's complexity, not time in milliseconds</li>
+      </ul>
+      <li>Algorithmic complexity</li>
+      <ul>
+        <li>
+          Roughly  number of steps performed by given computation,
+          depending on the size of the input.
+        </li>
+        <li>
+          Measured in asymptotic notations.
+        </li>
+        <li>Asymptotic notations</li>
+        <ul>
+          <li><strong>Big O</strong> - O(f(n))</li>
+          Worst case
+          <li><strong>Big Theta</strong> - &Theta;(f(n))</li>
+          Average case
+          <li><strong>Big Omega</strong> - &Omega;(f(n))</li>
+          Best case
+        </ul>
+      </ul>
+      <li>Memory complexity</li>
+      <li>Summary</li>
+      <ul>
+        <li><strong>Data structures</strong> - organize data in computer systems</li>
+        <li><strong>Algorithm complexity</strong> - Rough number of steps to complete a computation.</li>
+      </ul>
+    </ul>
+
+  </body>
+</html>
