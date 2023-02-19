@@ -182,6 +182,14 @@ address a {
     text-decoration: none;
 }
 
+#a-spaceships-adventure-cover {
+    background-image: linear-gradient(
+        to top,
+        rgba(37, 60, 46, 0.42),
+        rgba(37, 60, 46, 0.42)
+    ), url("../projects/a-spaceships-adventure/screenshots/menu.png");
+}
+
 #keep-the-forest-cover {
     background-image: linear-gradient(
         to top,
