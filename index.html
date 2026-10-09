@@ -1,171 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="css/main_style.css">
-    <script src="https://kit.fontawesome.com/7d86d31f9f.js" crossorigin="anonymous"></script>
-    <title>Ivaylo Ivanov - portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main-style.css">
+    <script src="https://kit.fontawesome.com/aa170b5c14.js" crossorigin="anonymous"></script>
+    <title>Ivaylo Ivanov – Game Developer</title>
   </head>
   <body>
 
-    <header>
-      <a href="#about-me">about me</a>
-      <a href="#portfolio-section">projects</a>
-      <a id="contact-me-button" href="#contact-information">Contact me</a>
-      <a id="download-button" download href="documents/cv.pdf">CV<i class="fas fa-download"></i></a>
+    <nav>
+      <a class="nav-logo" href="#about">Ivaylo Ivanov</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-nav-contact">Contact me</a>
+        <a href="documents/cv.pdf" download class="btn-nav-cv">CV <i class="fas fa-download"></i></a>
+      </div>
+    </nav>
+
+    <header id="about" class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Ivaylo Ivanov</h1>
+          <h3 class="section-label">Game developer</h3>
+          <p>
+            I am Ivaylo, a game developer, and I am building my first commercial
+            game.
+          </p>
+          <p>
+            I have more than 3 years of professional experience as a game
+            developer in Unity/C# and C++. I was part of the team behind the
+            MMORPG <i>Scars of Honor</i>. I built client- and server-side
+            systems like input, achievements and trading, and ported early
+            builds to Android. As a freelancer I built gameplay for an RTS, a 2D
+            platformer and consulted on a story-driven game of minigames.
+          </p>
+          <p>
+            Before games, I worked in automation and site reliability, so I like
+            building stable systems and tools as much as games.
+          </p>
+        </div>
+        <img class="hero-avatar" src="images/profile-picture-cut.png" alt="Ivaylo Ivanov profile picture">
+      </div>
     </header>
 
-    <div id="about-me" class="grid-container">
-      <article>
+    <section id="projects">
+      <div class="section-header">
+        <h2>Ongoing Projects</h2>
+      </div>
 
-        <h1>Ivaylo Ivanov</h1>
-        <h2>Game developer</h2>
+      <article class="featured">
+        <div class="featured-media">
+          <iframe src="https://www.youtube.com/embed/cFbYwooPNSk?si=9u3HJ6eKLrPOsYv5"
+                  title="Game trailer" allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
 
-        <p>
-          Hello, I am Ivaylo - a passionate game developer bringing worlds to
-          life one pixel at a time.
-          Right now, I am working on my first commercial game - the first step
-          toward exploring what my vision of games look like.
-          I have been part of the team behind Scars of Honor and have also
-          freelanced on a handful of smaller projects along the way.
-          When I am not developing, I teach computer science to the next
-          generation of creators at a local high school.
-        </p>
+        <div class="featured-body">
+          <div class="featured-main">
+            <h3>Project "UFO Invaders"</h3>
 
+            <ul class="tags">
+              <li>In Development</li>
+              <li>Local co-op Multiplayer</li>
+              <li>Action</li>
+              <li>Unity</li>
+              <li>Windows / Linux</li>
+            </ul>
+
+            <p>
+              A chaotic, local co-op, action-defense game where players fight
+              off enemies and try to not demolish everything around them during
+              the process.
+            </p>
+          </div>
+
+          <div class="featured-links">
+            <a class="btn btn-itch" href="https://embernest-games.itch.io/ufo-invasions" target="_blank" rel="noopener">
+              <i class="fab fa-itch-io"></i>
+            </a>
+            <a class="btn btn-discord" href="https://discord.gg/KbzqKkzMw5" target="_blank" rel="noopener">
+              <i class="fab fa-discord"></i>
+            </a>
+            <!-- TODO: Steam page button -->
+            <!-- <a class="btn btn-steam" href="#" target="_blank" rel="noopener"> -->
+            <!--   <i class="fab fa-steam"></i> -->
+            <!-- </a> -->
+          </div>
+        </div>
       </article>
+    </section>
 
-      <picture id="profile-picture">
-        <img src="./images/profile-picture-cut.png" alt="Profile picture">
-      </picture>
-    </div>
-
-    <div id="portfolio-separator">
-      <h2>My work</h2>
-    </div>
-
-    <div id="portfolio-section" class="grid-container">
-
-      <div class="portfolio-entry">
-        <div class="project-cover" id="a-spaceships-adventure-cover"></div>
-        <div class="project-information-grid">
-          <div>
-            <h3>A spaceship's adventure</h3>
-            <p>
-              Fly across dangerous space terrain, made in Unity.
-            </p>
-          </div>
-          <div class="project-button">
-            <a href="./projects/a-spaceships-adventure/index.html"><i class="fas fa-play"></i></a>
-          </div>
-          <!-- <div class="project-button"> -->
-          <!--   <a href="https://github.com/ivaylolivanov/keep-the-forest"><i class="fab fa-github-square"></i></a> -->
-          <!-- </div> -->
-        </div>
+    <section class="section-muted">
+      <div class="section-header">
+        <h2>Past projects</h2>
       </div>
 
-      <div class="portfolio-entry">
-        <div class="project-cover" id="keep-the-forest-cover"></div>
-        <div class="project-information-grid">
-          <div>
-            <h3>Keep the forest</h3>
-            <p>
-              Defend the forest against the humans and keep your home, made
-              in Unity.
-            </p>
-          </div>
-          <div class="project-button">
-            <a href="./projects/keep-the-forest/index.html"><i class="fas fa-play"></i></a>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/ivaylolivanov/keep-the-forest"><i class="fab fa-github-square"></i></a>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <img src="projects/a-spaceships-adventure/screenshots/menu.png" alt="A spaceship's adventure" loading="lazy">
+          <div class="project-card-body">
+            <h4>A spaceship's adventure</h4>
+            <p>Fly across dangerous space terrain, made in Unity.</p>
+            <div class="project-card-links">
+              <a href="projects/a-spaceships-adventure/index.html" title="Play"><i class="fas fa-play"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="portfolio-entry">
-        <div class="project-cover" id="laser-chess-cover"></div>
-        <div class="project-information-grid">
-          <div>
-            <h3>Laser chess</h3>
-            <p>
-              Battle in strategic fights against alien enemy, made in Unity.
-            </p>
-          </div>
-          <div class="project-button">
-            <a href="./projects/laser-chess/index.html"><i class="fas fa-play"></i></a>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/ivaylolivanov/laser-chess"><i class="fab fa-github-square"></i></a>
+        <div class="project-card">
+          <img src="projects/keep-the-forest/screenshots/LoadingScreen.png" alt="Keep the forest" loading="lazy">
+          <div class="project-card-body">
+            <h4>Keep the forest</h4>
+            <p>Defend the forest against the humans and keep your home, made in Unity.</p>
+            <div class="project-card-links">
+              <a href="projects/keep-the-forest/index.html" title="Play"><i class="fas fa-play"></i></a>
+              <a href="https://github.com/ivaylolivanov/keep-the-forest" title="Source code"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="portfolio-entry">
-        <div class="project-cover" id="air-pirates-cover"></div>
-        <div class="project-information-grid">
-          <div>
-            <h3>Air pirates</h3>
-            <p>
-              Navigate through the skies while being attacked by bunch of
-              pirates, made in Unity.
-            </p>
-          </div>
-          <div class="project-button">
-            <a href="./projects/air-pirates/index.html"><i class="fas fa-play"></i></a>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/ivaylolivanov/air-pirates"><i class="fab fa-github-square"></i></a>
+        <div class="project-card">
+          <img src="projects/laser-chess/screenshots/laser-chess-wallpaper.png" alt="Laser chess" loading="lazy">
+          <div class="project-card-body">
+            <h4>Laser chess</h4>
+            <p>Battle in strategic fights against alien enemy, made in Unity.</p>
+            <div class="project-card-links">
+              <a href="projects/laser-chess/index.html" title="Play"><i class="fas fa-play"></i></a>
+              <a href="https://github.com/ivaylolivanov/laser-chess" title="Source code"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="portfolio-entry">
-        <div class="project-cover" id="late-night-umami-cover"></div>
-        <div class="project-information-grid">
-          <div>
-            <h3>Late night umami</h3>
-            <p>
-              Cook the last ingredients for hungry people, going home
-              after work, made in Unity - Brackeys Game Jam 2021.1.
-            </p>
-          </div>
-          <div class="project-button">
-            <a href="./projects/laser-chess/index.html"><i class="fas fa-play"></i></a>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/ivaylolivanov/laser-chess"><i class="fab fa-github-square"></i></a>
+        <div class="project-card">
+          <img src="projects/air-pirates/screenshots/air-pirates.png" alt="Air pirates" loading="lazy">
+          <div class="project-card-body">
+            <h4>Air pirates</h4>
+            <p>Navigate through the skies while being attacked by bunch of pirates, made in Unity.</p>
+            <div class="project-card-links">
+              <a href="projects/air-pirates/index.html" title="Play"><i class="fas fa-play"></i></a>
+              <a href="https://github.com/ivaylolivanov/air-pirates" title="Source code"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="portfolio-entry">
-        <div class="project-cover" id="block-breaker-cover"></div>
-        <div class="project-information-grid">
-          <div>
-            <h3>Block breaker</h3>
-            <p>
-              Remake of "Arcanoid", made in Unity.
-            </p>
-          </div>
-          <div class="project-button">
-            <a href="./projects/block-breaker/index.html"><i class="fas fa-play"></i></a>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/ivaylolivanov/BlockBreakerUnity"><i class="fab fa-github-square"></i></a>
+        <div class="project-card">
+          <img src="projects/block-breaker/screenshots/block-breaker.png" alt="Block breaker" loading="lazy">
+          <div class="project-card-body">
+            <h4>Block breaker</h4>
+            <p>Remake of "Arcanoid", made in Unity.</p>
+            <div class="project-card-links">
+              <a href="projects/block-breaker/index.html" title="Play"><i class="fas fa-play"></i></a>
+              <a href="https://github.com/ivaylolivanov/BlockBreakerUnity" title="Source code"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
+
+        <div class="project-card">
+          <img src="projects/late-night-umami/screenshots/gameplay.png" alt="Late night umami" loading="lazy">
+          <div class="project-card-body">
+            <h4>Late night umami</h4>
+            <p>Cook the last ingredients for hungry people, going home after work, made in Unity - Brackeys Game Jam 2021.1.</p>
+            <div class="project-card-links">
+              <a href="https://m00ns7ruck.itch.io/late-night-umami" title="Play"><i class="fas fa-play"></i></a>
+              <a href="https://github.com/ivaylolivanov/LateNightUmami" title="Source code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-    </div>
-
-    <footer id="contact-information">
-      <h2>If you like my work, you can contact me</h2>
+    <footer id="contact">
+      <h2>Get in touch, I would love to chat!</h2>
       <address>
-        <a href="mailto:ivaylolivanov95@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/ivaylo-ivanov-ba8120127"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/Ivailo64704875"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/ivaylolivanov"><i class="fab fa-github-square"></i></a>
+        <a href="mailto:ivaylolivanov95@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ivaylo-ivanov-ba8120127" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/Ivailo64704875" title="X-Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://github.com/ivaylolivanov" title="GitHub"><i class="fab fa-github"></i></a>
       </address>
+      <small>© 2026 Ivaylo Ivanov · Game Developer</small>
     </footer>
 
   </body>
